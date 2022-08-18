@@ -2,20 +2,48 @@ name: Build and Run Test for C++
 
 on:
   push:
-    branches: [ "main" ]
+    branches: 
+      - main
+  
   pull_request:
-    branches: [ "main" ]
-
+    branches:
+      - main
 
 jobs:
-  ubuntu-build:
+  build:
+
     runs-on: ubuntu-latest
+    
     steps:
-    - name: Checkout
-      uses: actions/checkout@v2.0.0
-    - name: Build project
-      uses: nicledomaS/cmake_build_action@v1.4
-      with:
-        submodule_update: ON
-        run_tests: ON
-        unit_test_build: -Dtest=ON
+      - name: Checkout code
+        uses: actions/checkout@v3
+        id: checkout_code
+        
+      - name: Install dependencies on ubuntu
+        run: |
+          sudo apt-get update
+          sudo apt-get install ninja-build cmake
+          ninja --version
+          cmake --version
+          gcc --version
+
+      - name: Configure
+        shell: bash
+        run: |
+          mkdir build
+          mkdir instdir
+          cmake \
+            -S . \
+            -B . \
+            -DCMAKE_BUILD_TYPE="Debug" \
+            -G "Ninja" \
+            -DCMAKE_INSTALL_PREFIX:PATH=instdir
+            
+      - name: Build
+        shell: bash
+        run: cmake --build . --config "Debug"
+        
+      - name: Find files
+        shell: bash
+        run: find . -executable -type f
+        
