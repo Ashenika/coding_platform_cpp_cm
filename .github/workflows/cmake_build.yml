@@ -42,7 +42,11 @@ jobs:
         shell: bash
         run: cmake --build . --config "Debug"
         
-      - name: Find files
+      - name: Find Executable files
         shell: bash
         run: find . -executable -type f
+        
+      - name: Run Unit Tests
+        shell: bash
+        run: ./tests/template_cmake_test  #  ./tests/<project_name>_test
         
