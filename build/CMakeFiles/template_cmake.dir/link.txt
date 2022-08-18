@@ -1,0 +1,1 @@
+/usr/bin/c++  -g  -rdynamic CMakeFiles/template_cmake.dir/src/main.cpp.o  -o template_cmake 

@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/asheni/templates/template_cmake/src/AddStrings.h
+string
+-
+
+/home/asheni/templates/template_cmake/src/Addtring.cpp
+AddStrings.h
+/home/asheni/templates/template_cmake/src/AddStrings.h
+
+/home/asheni/templates/template_cmake/src/main.cpp
+AddStrings.h
+/home/asheni/templates/template_cmake/src/AddStrings.h
+iostream
+-
+string
+-
+

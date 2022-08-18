@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/asheni/templates/template_cmake/src/AddString.h
+string
+-
+
+/home/asheni/templates/template_cmake/src/main.cpp
+AddString.h
+/home/asheni/templates/template_cmake/src/AddString.h
+iostream
+-
+string
+-
+
