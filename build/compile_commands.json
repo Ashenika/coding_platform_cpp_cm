@@ -1,0 +1,7 @@
+[
+{
+  "directory": "/home/asheni/templates/cmake-project-template-master/template_cmake/build",
+  "command": "/usr/bin/g++    -g   -o CMakeFiles/template_cmake.dir/main.cpp.o -c /home/asheni/templates/cmake-project-template-master/template_cmake/main.cpp",
+  "file": "/home/asheni/templates/cmake-project-template-master/template_cmake/main.cpp"
+}
+]

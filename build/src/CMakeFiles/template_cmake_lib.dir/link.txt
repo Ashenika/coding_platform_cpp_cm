@@ -1,0 +1,2 @@
+/usr/bin/ar qc libtemplate_cmake_lib.a  CMakeFiles/template_cmake_lib.dir/Addtring.cpp.o CMakeFiles/template_cmake_lib.dir/main.cpp.o
+/usr/bin/ranlib libtemplate_cmake_lib.a

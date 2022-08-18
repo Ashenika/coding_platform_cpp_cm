@@ -1,0 +1,1 @@
+/usr/bin/c++  -g  -rdynamic CMakeFiles/template_cmake_run.dir/Addtring.cpp.o CMakeFiles/template_cmake_run.dir/main.cpp.o  -o template_cmake_run 
