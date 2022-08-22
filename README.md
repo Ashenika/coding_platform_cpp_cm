@@ -1,4 +1,4 @@
-# template_cmake
+# coding_platform C++ Template - Using CMake
 
 **Note:** This project is created using cmake. And projects created as Microsoft Visual Studio solution (.sln) will not support for the available Github actions workflow template.
 
